@@ -39,14 +39,14 @@
 
                                 </ul>
                                 <h5 class="card-title">
-                                    <a href="single.html">@item.BlogTitle</a>
+                                    <a href="/BlogControllers/BlogReadAll/@item.BlogID/">@item.BlogTitle</a>
                                 </h5>
-                                <p class="card-text mb-3">@item.BlogContent.Substring(0,30) </p>
-                                <a href="single.html" class="btn btn-primary read-m">Read More</a>
+                                <p class="card-text mb-3">
+                                    @item.BlogContent.Substring(0,item.BlogContent.Substring(0,130).LastIndexOf(" "))</p>
+                                <a href="/BlogControllers/BlogReadAll/@item.BlogID/" class="btn btn-primary read-m">Read More</a>
                             </div>
                         </div>
-                    }
-                </div>
+                    } 
                 <!--//left-->
             </div>
         </div>

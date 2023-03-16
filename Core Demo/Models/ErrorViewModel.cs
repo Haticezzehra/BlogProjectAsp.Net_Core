@@ -1,4 +1,4 @@
-namespace Core_Demo.Models
+namespace Presantation.Models
 {
     public class ErrorViewModel
     {

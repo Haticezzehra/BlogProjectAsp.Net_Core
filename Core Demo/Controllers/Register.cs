@@ -1,13 +1,15 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Demo.Controllers
 {
-    public class RegisterController : Controller
+    public class Register : Controller
     {
         WriterManager writerManager=new WriterManager(new EfWriterRepository());
         
@@ -17,13 +19,31 @@ namespace Core_Demo.Controllers
             return View();
         }
         //Ekleme işlemi yapılırken httpget ve httppost attributerinin tanımlandığı metotların issimleri aynı olmak zorunda  
-        [HttpPost] //Sayfada buton tetiklenince çalışıyo
+        //Sayfada buton tetiklenince çalışıyo
+        [HttpPost]
         public IActionResult Index(Writer writer)
         {
-            writer.WriterStatus = true;
-            writer.WriterAbout = "Deneme";
-            writerManager.WriterAdd(writer);
-            return RedirectToAction("Index","BlogControllers");
+            WriterValidator wv = new WriterValidator();
+            ValidationResult result= wv.Validate(writer);
+            
+            
+
+            if(result.IsValid)
+            {
+                writer.WriterStatus = true;
+                writer.WriterAbout = "Deneme";
+                writerManager.WriterAdd(writer);
+                return RedirectToAction("Index", "BlogControllers");
+
+            }
+            else
+            {
+                foreach(var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
 
         }
     }

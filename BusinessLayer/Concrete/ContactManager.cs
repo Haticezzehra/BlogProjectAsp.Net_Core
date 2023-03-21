@@ -9,19 +9,18 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class AboutManager : IAboutService
+    public class ContactManager : IContactService
     {
-        IAboutDal aboutDal;
+        IContactDal contactDal;
 
-        public AboutManager(IAboutDal aboutDal)
+        public ContactManager(IContactDal contactDal)
         {
-            this.aboutDal = aboutDal;
+            this.contactDal = contactDal;
         }
 
-
-        public List<About> GetAll()
+        public void ContactAdd(Contact contact)
         {
-           return aboutDal.GetAll();
+            contactDal.Add(contact);
         }
     }
 }

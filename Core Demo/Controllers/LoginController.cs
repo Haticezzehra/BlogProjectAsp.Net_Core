@@ -1,7 +1,10 @@
 ﻿using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using System.Security.Claims;
 
 namespace Core_Demo.Controllers
 {
@@ -14,21 +17,33 @@ namespace Core_Demo.Controllers
         }
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult Index(Writer writer)
+        public async Task<IActionResult> Index(Writer writer)
         {
-            Context context = new Context();
-            var dataValue = context.Writers.FirstOrDefault(x => x.WriterMail == writer.WriterMail
+            Context con = new Context();
+            var dataValue = con.Writers.FirstOrDefault(x => x.WriterMail == writer.WriterMail
             && x.WriterPassword == writer.WriterPassword);
             if (dataValue != null)
             {
-                HttpContext.Session.SetString("username", writer.WriterMail);
-                return RedirectToAction( "Index", "Writer");
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name,writer.WriterMail)
+                };
+                var useridentity = new ClaimsIdentity(claims, "a");
+                ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
+                await HttpContext.SignInAsync(principal);
+                return RedirectToAction("Index", "Writter");
+
+
             }
             else
             {
                 return View();
             }
 
+
+
+
         }
     }
 }
+

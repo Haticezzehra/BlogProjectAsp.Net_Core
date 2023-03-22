@@ -16,5 +16,12 @@ namespace Core_Demo.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return View();
+
+        }
+
     }
 }

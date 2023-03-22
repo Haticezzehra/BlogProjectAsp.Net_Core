@@ -47,28 +47,3 @@ namespace BusinessLayer.Concrete
         }
     }
 }
-/*
-public void Add(Category category)
-{
-
-}
-
-public void Delete(Category category)
-{
-
-}
-
-public List<Category> GetAll()
-{
-    return categoryDal.GetAll();
-}
-
-public Category GetById(int id)
-{
-    return categoryDal.GetById(id);
-}
-
-public void Update(Category category)
-{
-    categoryDal.Update(category);
-}*/

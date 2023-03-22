@@ -32,7 +32,7 @@ namespace Core_Demo.Controllers
             {
                 writer.WriterStatus = true;
                 writer.WriterAbout = "Deneme";
-                writerManager.WriterAdd(writer);
+                writerManager.Add(writer);
                 return RedirectToAction("Index", "BlogControllers");
 
             }

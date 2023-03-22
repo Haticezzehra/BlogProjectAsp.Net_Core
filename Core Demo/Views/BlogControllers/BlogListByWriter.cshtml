@@ -20,8 +20,11 @@
         <tr>
             <th>@item.BlogID</th>
             <th>@item.BlogTitle</th>
-            <th>@item.BlogCreateDate</th>
-            <th>@item.CategoryID</th>
+            <th>
+                @(((DateTime)item.BlogCreateDate).
+                    ToString("dd-MMM-yyyy"))
+            </th>
+            <th>@item.Category.CategoryName </th>
             <th>@item.BlogStatus</th>
             <th><a href="#" class="btn btn-danger">Sil</th>
             <th><a href="#" class="btn btn-warning">Düzenle</th>

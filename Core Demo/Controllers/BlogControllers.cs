@@ -6,6 +6,7 @@ using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Core_Demo.Controllers
@@ -28,7 +29,7 @@ namespace Core_Demo.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var values = blogManager.GetBlogListByWriter(1);
+            var values = blogManager.GetListWithCategoryByWriterBm(1);
             return View(values);
         }
 
@@ -42,7 +43,7 @@ namespace Core_Demo.Controllers
                                                    Text = x.CategoryName,
                                                    Value = x.CategoryID.ToString()
                                                }).ToList();
-            ViewBag.cv  = categories;
+            ViewBag.cv = categories;
             return View();
         }
 

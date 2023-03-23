@@ -26,10 +26,10 @@
             </th>
             <th>@item.Category.CategoryName </th>
             <th>@item.BlogStatus</th>
-            <th><a href="#" class="btn btn-danger">Sil</th>
-            <th><a href="#" class="btn btn-warning">Düzenle</th>
+            <th><a href="/BlogControllers/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek istediğine emin misin?');" class="btn btn-danger">Sil</th>
+            <th><a href="/BlogControllers/EditBlog/@item.BlogID" class="btn btn-warning">Düzenle</th>
 
         </tr>
     }
 </table>
-<a href="#" class="btn btn-gradient-info">Create New Blog</a> 
+<a href="/BlogControllers/BlogAdd/" class="btn btn-gradient-info">Create New Blog</a>

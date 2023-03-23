@@ -15,6 +15,7 @@ namespace Core_Demo.Controllers
     public class BlogControllers : Controller
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
+        CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
         public IActionResult Index()
         {
             var values = blogManager.GetBlogListWithCategory();
@@ -52,7 +53,13 @@ namespace Core_Demo.Controllers
         {
             BlogValidator wv = new BlogValidator();
             ValidationResult result = wv.Validate(blog);
-
+            List<SelectListItem> categories = (from x in categoryManager.GetAll()
+                                               select new SelectListItem
+                                               {
+                                                   Text = x.CategoryName,
+                                                   Value = x.CategoryID.ToString()
+                                               }).ToList();
+            ViewBag.cv = categories;
 
             if (result.IsValid)
             {
@@ -72,6 +79,38 @@ namespace Core_Demo.Controllers
             }
             return View();
 
+        }
+        public IActionResult DeleteBlog(int id)
+        {
+            var value = blogManager.GetById(id);
+            blogManager.Delete(value);
+            return RedirectToAction("BlogListByWriter");
+        }
+
+        [HttpGet]
+
+        public IActionResult EditBlog(int id)
+        {
+            var value = blogManager.GetById(id);
+            List<SelectListItem> categories = (from x in categoryManager.GetAll()
+                                               select new SelectListItem
+                                               {
+                                                   Text = x.CategoryName,
+                                                   Value = x.CategoryID.ToString()
+                                               }).ToList();
+            ViewBag.cv = categories;
+            return View(value);
+        }
+
+        [HttpPost]
+
+        public IActionResult EditBlog(Blog blog)
+        {
+            blog.WriterID = 1;
+            blog.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+            blog.BlogStatus = true;
+            blogManager.Update(blog);
+            return RedirectToAction("BlogListByWriter");
         }
     }
 

@@ -23,7 +23,7 @@
                                     <li>
                                         <a href="#">
                                             <i class="far fa-calendar-alt"></i> @(((DateTime)item.BlogCreateDate).
-                                            ToString("dd-MMM-yyyy"))
+                                        ToString("dd-MMM-yyyy"))
                                         </a>
                                     </li>
                                     <li class="mx-2">
@@ -42,13 +42,14 @@
                                     <a href="/BlogControllers/BlogReadAll/@item.BlogID/">@item.BlogTitle</a>
                                 </h5>
                                 <p class="card-text mb-3">
-                                    @item.BlogContent.Substring(0,item.BlogContent.Substring(0,130).LastIndexOf(" "))</p>
+                                    @item.BlogContent.Substring(0,item.BlogContent.Substring(0,130).LastIndexOf(" "))
+                                </p>
                                 <a href="/BlogControllers/BlogReadAll/@item.BlogID/" class="btn btn-primary read-m">Read More</a>
                             </div>
                         </div>
-                    } 
-                <!--//left-->
+                    }
+                    <!--//left-->
+                </div>
             </div>
         </div>
-    </div>
 </section>

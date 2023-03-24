@@ -5,26 +5,12 @@
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
 
-<!--
-    Author: W3layouts
-    Author URL: http://w3layouts.com
-    License: Creative Commons Attribution 3.0 Unported
-    License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
 <!DOCTYPE html>
 <html lang="zxx">
-
-
 <body>
-    <!--Header-->
-    <!--//header-->
-    <!--//banner-->
     <section class="banner-bottom">
-        <!--/blog-->
         <div class="container">
             <div class="row">
-                <!--left-->
                 <div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
                     @foreach (var item in Model)
                     {
@@ -57,7 +43,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <h3>
                                 <a href="single.html">@item.BlogTitle </a>
                             </h3>
@@ -67,13 +52,8 @@
                             <a href="/Blog/Index/" class="btn btn-primary read-m">Read More Blog</a>
                         </div>
                     }
-
-
                     @await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml")
                 </div>
-
-                <!--//left-->
-                <!--right-->
                 <aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
                     <div class="right-blog-info text-left">
                         <div class="tech-btm">
@@ -124,17 +104,10 @@
                             </div>
                         </div>
                     </div>
-
                 </aside>
-                <!--//right-->
             </div>
         </div>
     </section>
-    <!--//main-->
-    <!--footer-->
-    <!---->
-    <!-- js -->
-
 </body>
 
 </html>

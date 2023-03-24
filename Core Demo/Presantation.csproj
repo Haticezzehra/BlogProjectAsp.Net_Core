@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\WriterImageFile\" />
     <Folder Include="wwwroot\writer\Core_Writer_Layout-main\" />
   </ItemGroup>
 

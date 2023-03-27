@@ -12,3 +12,4 @@ namespace BusinessLayer.Abstract
         List<Message2> GetInboxListByWritter(string p);
     }
 }
+ 

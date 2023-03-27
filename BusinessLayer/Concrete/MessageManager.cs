@@ -44,6 +44,11 @@ namespace BusinessLayer.Concrete
             return messageDal.GetAll(x => x.Receiver == p);
         }
 
+        public List<Message> GetInboxListByWritter(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Message t)
         {
             throw new NotImplementedException();

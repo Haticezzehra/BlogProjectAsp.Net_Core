@@ -1,0 +1,201 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Core_Demo
+build_property.RootNamespace = Core_Demo
+build_property.ProjectDir = C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/About/SocialMediaAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcU29jaWFsTWVkaWFBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/BlogAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEJsb2dBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/BlogListByWriter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEJsb2dMaXN0QnlXcml0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/BlogReadAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEJsb2dSZWFkQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/EditBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEVkaXRCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/CategoryController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlDb250cm9sbGVyMVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Comment/CommentListBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDb21tZW50TGlzdEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Comment/PartialAddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxQYXJ0aWFsQWRkQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/ContactController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdENvbnRyb2xsZXIxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/DashBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/ErrorPage/Error1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlXEVycm9yMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/NewsLetter/SubscribeMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0xldHRlclxTdWJzY3JpYmVNYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Notification/AllNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEFsbE5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/BlogListDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0xpc3REYXNoYm9hcmRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/CategoryListDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0RGFzaGJvYXJkXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/CategoryList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/CommentListByBlog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RCeUJsb2dcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/CommentsList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudHNMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/WriterAboutOnDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyQWJvdXRPbkRhc2hib2FyZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/WriterLast3Post/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTGFzdDNQb3N0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/WriterLastBlog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTGFzdEJsb2dcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/WriterNotification/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTm90aWZpY2F0aW9uXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/WritterMessageNotification/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdHRlck1lc3NhZ2VOb3RpZmljYXRpb25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Partial1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWwxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Partial2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWwyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Partial3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWwzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFVzZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/WriterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFdyaXRlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/WriterAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxXcml0ZXJBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/WriterEditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxXcml0ZXJFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/WriterFooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxXcml0ZXJGb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/WriterNavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxXcml0ZXJOYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Writter/WriterProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdHRlclxXcml0ZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vy37b0l7mi

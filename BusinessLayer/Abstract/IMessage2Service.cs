@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    internal interface IMessage2Services
+    public interface IMessage2Service : IGenericService<Message2>
     {
+        List<Message2> GetInboxListByWritter(string p);
     }
 }

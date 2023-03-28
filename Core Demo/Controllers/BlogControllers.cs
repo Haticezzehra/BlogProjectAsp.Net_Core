@@ -8,10 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using DataAccessLayer.Concrete;
 
 namespace Core_Demo.Controllers
 {
-    [AllowAnonymous]
+
     public class BlogControllers : Controller
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
@@ -30,7 +31,12 @@ namespace Core_Demo.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var values = blogManager.GetListWithCategoryByWriterBm(1);
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            var values = blogManager.GetListWithCategoryByWriterBm(writerID);
             return View(values);
         }
 
@@ -51,6 +57,11 @@ namespace Core_Demo.Controllers
         [HttpPost]
         public IActionResult BlogAdd(Blog blog)
         {
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             BlogValidator wv = new BlogValidator();
             ValidationResult result = wv.Validate(blog);
             List<SelectListItem> categories = (from x in categoryManager.GetAll()
@@ -65,7 +76,7 @@ namespace Core_Demo.Controllers
             {
                 blog.BlogStatus = true;
                 blog.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
-                blog.WriterID = 1;
+                blog.WriterID = writerID;
                 blogManager.Add(blog);
                 return RedirectToAction("BlogListByWriter", "BlogControllers");
 
@@ -106,7 +117,12 @@ namespace Core_Demo.Controllers
 
         public IActionResult EditBlog(Blog blog)
         {
-            blog.WriterID = 1;
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            blog.WriterID = writerID;
             blog.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             blog.BlogStatus = true;
             blogManager.Update(blog);

@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcU29jaWFsTWVkaWFBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Admin/AdminNavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/BlogControllers/BlogAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0NvbnRyb2xsZXJzXEJsb2dBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +88,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/MessageController1/InBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZUNvbnRyb2xsZXIxXEluQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/MessageController1/MessageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZUNvbnRyb2xsZXIxXE1lc3NhZ2VEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/NewsLetter/SubscribeMail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0xldHRlclxTdWJzY3JpYmVNYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hatic/OneDrive/Masaüstü/Paximum/BlogProject/Core Demo/Views/Shared/Components/BlogListDashboard/Default.cshtml]

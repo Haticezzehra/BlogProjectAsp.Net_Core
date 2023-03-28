@@ -34,7 +34,7 @@ namespace BusinessLayer.Concrete
 
         public Message2 GetById(int id)
         {
-            throw new NotImplementedException();
+            return messageDal.GetById(id);
         }
 
         public List<Message2> GetInboxListByWritter(int id)

@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.                                
-builder.Services.AddControllersWithViews();                      
-                                                                 
-                                                                 
-                                                                 
-builder.Services.AddMvc(config =>                                
-{                                                                
-    var policy = new AuthorizationPolicyBuilder()                
+builder.Services.AddControllersWithViews();
+
+
+
+builder.Services.AddMvc(config =>
+{
+    var policy = new AuthorizationPolicyBuilder()
                     .RequireAuthenticatedUser()
                     .Build();
     config.Filters.Add(new AuthorizeFilter(policy));
@@ -62,5 +62,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+   name: "areas",
+   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

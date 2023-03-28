@@ -297,3 +297,6 @@ C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.
 C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\obj\Debug\net6.0\Presantation.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\hatic\OneDrive\Masaüstü\Paximum\BlogProject\Core Demo\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll

@@ -277,6 +277,10 @@
       "PackagePath": "staticwebassets\\CoreBlogTema\\webfonts\\fa-solid-900.woff2"
     },
     {
+      "Id": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\Core Demo\\wwwroot\\WriterImageFile\\a04a02f4-312c-4305-830f-694ad53da9e0.png",
+      "PackagePath": "staticwebassets\\WriterImageFile\\a04a02f4-312c-4305-830f-694ad53da9e0.png"
+    },
+    {
       "Id": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\Core Demo\\wwwroot\\WriterImageFile\\af27b408-b16d-47b6-be09-2bfcac74cfe2.jpg",
       "PackagePath": "staticwebassets\\WriterImageFile\\af27b408-b16d-47b6-be09-2bfcac74cfe2.jpg"
     },

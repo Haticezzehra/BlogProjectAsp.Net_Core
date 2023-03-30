@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pTj9nzNsPnwl4Y600n4ct6C3ko/srNXrAsKx5eZzvtY=",
+  "Hash": "LxjsSHtq362lr/hwYrh+aspUOPw8X08EqeD777BY0t0=",
   "Source": "Presantation",
   "BasePath": "_content/Presantation",
   "Mode": "Default",
@@ -31822,6 +31822,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Writer\\screenshot.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\Core Demo\\wwwroot\\WriterImageFile\\a04a02f4-312c-4305-830f-694ad53da9e0.png",
+      "SourceId": "Presantation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\Core Demo\\wwwroot\\",
+      "BasePath": "_content/Presantation",
+      "RelativePath": "WriterImageFile/a04a02f4-312c-4305-830f-694ad53da9e0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\WriterImageFile\\a04a02f4-312c-4305-830f-694ad53da9e0.png"
     },
     {
       "Identity": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\Core Demo\\wwwroot\\WriterImageFile\\af27b408-b16d-47b6-be09-2bfcac74cfe2.jpg",

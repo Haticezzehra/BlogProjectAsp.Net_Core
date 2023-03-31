@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{98E62B5B-40EB-4361-A2EC-4ECBB651264C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApiDemo", "BlogApiDemo\BlogApiDemo.csproj", "{FADB527C-BE57-4CBD-82AA-5F4EDDC4DE93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{98E62B5B-40EB-4361-A2EC-4ECBB651264C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E62B5B-40EB-4361-A2EC-4ECBB651264C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E62B5B-40EB-4361-A2EC-4ECBB651264C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADB527C-BE57-4CBD-82AA-5F4EDDC4DE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADB527C-BE57-4CBD-82AA-5F4EDDC4DE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADB527C-BE57-4CBD-82AA-5F4EDDC4DE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADB527C-BE57-4CBD-82AA-5F4EDDC4DE93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

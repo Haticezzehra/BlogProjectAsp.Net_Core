@@ -39,5 +39,39 @@ namespace BlogApiDemo.Controllers
                 return Ok(values);
             }
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteEmployee(int id)
+        {
+            using var c = new Context();
+            var employee = c.Emplooyees.Find(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                c.Remove(employee);
+                c.SaveChanges();
+                return Ok();
+            }
+        }
+        [HttpPut]
+        public IActionResult UpdateEmployee(Employee employee)
+        {
+            using var c = new Context();
+            var emp = c.Find<Employee>(employee.ID);
+            if (emp == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                emp.Name = employee.Name;
+                c.SaveChanges();
+                return Ok();
+            }
+
+        }
     }
 }

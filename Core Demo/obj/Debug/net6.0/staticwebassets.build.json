@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "LxjsSHtq362lr/hwYrh+aspUOPw8X08EqeD777BY0t0=",
+  "Hash": "Rn3VpJOC6A+g//3HXFPFvohl4GkDKfxy8mh+m1NDEdU=",
   "Source": "Presantation",
   "BasePath": "_content/Presantation",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\hatic\\OneDrive\\Masaüstü\\Paximum\\BlogProject\\BlogApiDemo\\BlogApiDemo.csproj",
+      "Version": 2,
+      "Source": "BlogApiDemo",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Presantation\\wwwroot",

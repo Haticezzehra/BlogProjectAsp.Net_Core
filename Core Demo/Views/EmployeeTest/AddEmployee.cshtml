@@ -1,29 +1,14 @@
 ﻿@using Core_Demo.Controllers
-@model List<Class1>
+@model Class1
 @{
     ViewData["Title"] = "AddEmployee";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Adı Soyadı</th>
-        <th>Sil</th>
-        <th>Düzenle</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <th>@item.ID</th>
-            <th>@item.Name</th>
-            <th><a href="#" class="btn btn-outline-danger">Sil</a></th>
-            <th><a href="#" class="btn btn-outline-success">Düzenle</a></th>
-            <th>Düzenle</th>
-        </tr>
-    }
-
-
-
-</table>
+<form method="post">
+    <label>Çalışan Adı Soyadı</label>
+    <input type="text" asp-for="@Model.Name" class="form-control" />
+    <br />
+    <button type="submit" class="btn btn-info">Çalışan Ekle</button>
+</form>
 

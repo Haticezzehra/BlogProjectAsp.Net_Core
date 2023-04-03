@@ -16,5 +16,28 @@ namespace BlogApiDemo.Controllers
             var values = c.Emplooyees.ToList();
             return Ok(values); //Ok başarılı durum kodu demek.
         }
+        [HttpPost]
+        public IActionResult EmployeeAdd(Employee employee)
+        {
+            using var c = new Context();
+            var values = c.Emplooyees.Add(employee);
+            c.SaveChanges();
+            return Ok(values);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetEmployee(int id)
+        {
+            using var c = new Context();
+            var values = c.Emplooyees.Find(id);
+            if (values == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(values);
+            }
+        }
     }
 }

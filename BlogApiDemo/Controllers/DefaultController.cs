@@ -12,14 +12,14 @@ namespace BlogApiDemo.Controllers
         [HttpGet] //Veri getireceğimiz kısım.
         public IActionResult EmployeeList()
         {
-            using var c = new Context();
+            using var c = new Contexxt();
             var values = c.Emplooyees.ToList();
             return Ok(values); //Ok başarılı durum kodu demek.
         }
         [HttpPost]
         public IActionResult EmployeeAdd(Employee employee)
         {
-            using var c = new Context();
+            using var c = new Contexxt();
             var values = c.Emplooyees.Add(employee);
             c.SaveChanges();
             return Ok(values);
@@ -28,7 +28,7 @@ namespace BlogApiDemo.Controllers
         [HttpGet("{id}")]
         public IActionResult GetEmployee(int id)
         {
-            using var c = new Context();
+            using var c = new Contexxt();
             var values = c.Emplooyees.Find(id);
             if (values == null)
             {
@@ -43,7 +43,7 @@ namespace BlogApiDemo.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteEmployee(int id)
         {
-            using var c = new Context();
+            using var c = new Contexxt();
             var employee = c.Emplooyees.Find(id);
             if (employee == null)
             {
@@ -59,7 +59,7 @@ namespace BlogApiDemo.Controllers
         [HttpPut]
         public IActionResult UpdateEmployee(Employee employee)
         {
-            using var c = new Context();
+            using var c = new Contexxt();
             var emp = c.Find<Employee>(employee.ID);
             if (emp == null)
             {

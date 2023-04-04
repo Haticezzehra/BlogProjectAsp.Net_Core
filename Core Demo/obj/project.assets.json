@@ -4454,7 +4454,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "EntityLayer": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.1.31",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
@@ -4470,6 +4470,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.13"
         },
         "compile": {

@@ -2,7 +2,7 @@
 
 namespace BlogApiDemo.DataAccessLayer
 {
-    public class Context : DbContext
+    public class Contexxt : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

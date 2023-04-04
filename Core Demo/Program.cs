@@ -1,3 +1,6 @@
+using DocumentFormat.OpenXml.InkML;
+using EntityLayer.Concrete;
+using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -5,6 +8,17 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.                                
+builder.Services.AddDbContext<DataAccessLayer.Concrete.Context>();
+builder.Services.AddIdentity<AppUser, AppRole>(
+    x =>
+    {
+        x.Password.RequireUppercase = false;
+        x.Password.RequireNonAlphanumeric = false;
+    }
+
+).AddEntityFrameworkStores<DataAccessLayer.Concrete.Context>();
+
+
 builder.Services.AddControllersWithViews();
 
 

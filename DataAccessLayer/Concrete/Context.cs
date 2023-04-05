@@ -1,6 +1,7 @@
 ﻿using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace DataAccessLayer.Concrete
         {
             optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=CoreBlogDB;integrated security=true");
         }
+      
 
         /// 2 li ilişki oluşturmak için burayık yaptık
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,6 +33,14 @@ namespace DataAccessLayer.Concrete
                 .HasForeignKey(z => z.ReceiverID)
                 .OnDelete(DeleteBehavior.ClientSetNull);
             base.OnModelCreating(modelBuilder);
+
+            //modelBuilder.Entity<Comment>()
+            //    .HasTableTrigger("my_trigger",trigger=>trigger
+            //    .AfterInsert()
+            //    .OnTable("my_table")
+            //    .ForEachRow()
+            //    .HasSqlBody
+
         }
 
         public DbSet<About> Abouts { get; set; }

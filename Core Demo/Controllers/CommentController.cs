@@ -1,10 +1,12 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Demo.Controllers
 {
+    [AllowAnonymous]
     public class CommentController : Controller
     {
         CommentManager commentManager = new CommentManager(new EfCommentRepository());
@@ -28,6 +30,7 @@ namespace Core_Demo.Controllers
             return PartialView();
 
         }
+        [HttpGet]
         public PartialViewResult CommentListBlog(int id)
         {
             var values = commentManager.GetAll(id);

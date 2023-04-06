@@ -1,56 +1,52 @@
-﻿@model EntityLayer.Concrete.AppUser
+﻿@using Core_Demo.Models;
+@model UserUpdateViewModel
 @{
     ViewData["Title"] = "WriterEditProfile";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
-@using (Html.BeginForm("WriterEditProfile", "Writter", FormMethod.Post))
-{
 
 
-    <div class="col-12 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Writer Edit Profile</h4>
-                <br />
-                @Html.HiddenFor(x=>x.Id ,new {@class="form-control"})
-                <form class="forms-sample">
-                    <div class="form-group">
-                        <label for="exampleInputName1">Writer Name Surname</label>
-                        @Html.TextBoxFor(x=>x.NameSurName,new {@class="form-control"})
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputName1">User Name</label>
-                        @Html.TextBoxFor(x=>x.UserName,new {@class="form-control"})
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail3">Email address</label>
-                        @Html.TextBoxFor(x=>x.Email,new {@class="form-control"})
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword4">Password</label>
-                       @* @Html.TextBoxFor(x=>x.WriterPassword,new {@class="form-control"})*@
-                    </div>
 
-                    <div class="form-group">
-                        <label>Writer Image</label>
-                       @* @Html.TextBoxFor(x=>x.WriterImage,new {@class="form-c*@ontrol"})
-                        <div class="input-group col-xs-12">
-                            <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                            <span class="input-group-append">
-                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Choose Picture</button>
-                            </span>
-                        </div>
-                    </div>
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Writer Edit Profile</h4>
+            <br />
 
-                    <div class="form-group">
-                        <label for="exampleTextarea1">Writer About</label>
-                   @*     @Html.TextAreaFor(x=>x.WriterAbout,10,3,new {@class="form-control"})*@
-                    </div>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">Update</button>
-                    <button class="btn btn-light">Cancel</button>
-                </form>
-            </div>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Writer Name Surname</label>
+                    <input type="text" asp-for="@Model.namesurname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">User Name</label>
+                    <input type="text" asp-for="@Model.username" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Email address</label>
+                    <input type="text" asp-for="@Model.email" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Image Url</label>
+                    <input type="text" asp-for="@Model.imageurl" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">New Password</label>
+                    <input type="text" asp-for="@Model.password" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+                    <label>Writer Image</label>
+                </div>
+               
+                <button type="submit" class="btn btn-gradient-primary mr-2">Update</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
         </div>
     </div>
-}
+</div>

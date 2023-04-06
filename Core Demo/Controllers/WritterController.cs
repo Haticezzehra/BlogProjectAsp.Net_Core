@@ -31,7 +31,6 @@ namespace Core_Demo.Controllers
             var usermail = User.Identity.Name;
             ViewBag.v = usermail;
             Context c = new Context();
-
             var WriterName = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterName).FirstOrDefault();
             ViewBag.v2 = WriterName;
             return View();
@@ -62,40 +61,27 @@ namespace Core_Demo.Controllers
         public async Task<IActionResult> WriterEditProfile()
         {
 
-
-            Context c = new Context();
-            var username = User.Identity.Name;
-            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
-            UserManager userManager = new UserManager(new EfUserRepository());
-            //var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-
-            //var writerValues = writerManager.GetById(writerID);
-            //return View(writerValues);
-            var id = c.Users.Where(x => x.Email == usermail).Select(y => y.Id).FirstOrDefault();
-            var values = userManager.GetById(id);
-            return View(values);
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            UserUpdateViewModel model = new UserUpdateViewModel();
+            model.email = values.Email;
+            model.namesurname = values.NameSurName;
+            model.imageurl = values.ImageUrl;
+            model.username = values.UserName;
+            return View(model);
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult WriterEditProfile(Writer writer)
+        public async Task<IActionResult> WriterEditProfile(UserUpdateViewModel model)
         {
-            WriterValidator validator = new WriterValidator();
-            ValidationResult result = validator.Validate(writer);
-            if (result.IsValid)
-            {
-                writerManager.Update(writer);
-                return RedirectToAction("Index", "DashBoard");
-            }
-            else
-            {
-                foreach (var item in result.Errors)
-                {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-                }
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            values.Email = model.email;
+            values.NameSurName = model.namesurname;
+            values.ImageUrl = model.imageurl;
+            values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, model.password);
+            var result = await _userManager.UpdateAsync(values);
+            return RedirectToAction("Index", "Dashboard");
 
-            }
-            return View();
         }
         [AllowAnonymous]
         [HttpGet]
@@ -125,5 +111,6 @@ namespace Core_Demo.Controllers
             writerManager.Add(writer);
             return RedirectToAction("Index", "DashBoard");
         }
+      
     }
 }

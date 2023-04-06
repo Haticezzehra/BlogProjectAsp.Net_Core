@@ -38,7 +38,7 @@ namespace BusinessLayer.Concrete
 
         public void Update(AppUser t)
         {
-            throw new NotImplementedException();
+            userDal.Update(t);
         }
     }
 }

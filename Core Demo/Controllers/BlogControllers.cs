@@ -17,6 +17,7 @@ namespace Core_Demo.Controllers
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+        Context c = new Context();
         [AllowAnonymous]
         public IActionResult Index()
         {
@@ -30,14 +31,12 @@ namespace Core_Demo.Controllers
             var values = blogManager.GetBlogById(id);
             return View(values);
         }
-
         public IActionResult BlogListByWriter()
         {
-            Context c = new Context();
-            var usermail = User.Identity.Name;
-
-
+            var username = User.Identity.Name;
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            ViewBag.v = writerID;
             var values = blogManager.GetListWithCategoryByWriterBm(writerID);
             return View(values);
         }
@@ -61,8 +60,6 @@ namespace Core_Demo.Controllers
         {
             Context c = new Context();
             var usermail = User.Identity.Name;
-
-
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             BlogValidator wv = new BlogValidator();
             ValidationResult result = wv.Validate(blog);
